@@ -130,7 +130,6 @@ body {
 .header {
   width: 100%;
   padding-top: 150px;
-  padding-bottom: 150px;
 }
 
 .header .header-box .title h1 {
@@ -147,12 +146,23 @@ body {
   line-height: 1.8;
 }
 
-.carousel {
+main {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 150px;
+  justify-content: center;
   width: 100%;
-  margin-top: 30px;
-  margin-left: 100px;
 }
 
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel {
+  width: 100%;
+}
 .carousel .carousel-container {
   position: relative;
   overflow: hidden;
@@ -170,7 +180,53 @@ body {
   gap: 10px;
 }
 
+main h3 {
+  font-size: medium;
+  color: var(--text-color-opacity);
+  margin-top: 20px;
+}
 
+.form-contact {
+  margin-left: 20px;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 400px;
+  background-color: #cacaca7c;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.form-contact h1 {
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: xx-large;
+  align-self: flex-start;
+}
+
+.form-contact p {
+  color: var(--text-color-opacity);
+}
+
+.form-contact form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  margin-top: 30px;
+  color: var(--text-color);
+}
+
+.form-contact label{
+  font-size: medium;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-contact input {
+  margin-bottom: 30px;
+}
 
 @media screen and (max-width: 768px) {
   .navbar .navbar-box .hamburger {
