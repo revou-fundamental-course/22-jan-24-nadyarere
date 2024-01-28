@@ -15,6 +15,16 @@
   --button-hover: #dc143c;
 }
 
+body {
+  background-color: #111111;
+  opacity: 1;
+  background-image: linear-gradient(#171717 3.5px, transparent 3.5px),
+    linear-gradient(to right, #171717 3.5px, #111111 3.5px);
+  background-size: 70px 70px;
+  min-height: 100vh;
+  /* overflow: hidden; */
+}
+
 .navbar {
   width: 100%;
   padding: 15px 0 15px 0;
@@ -119,14 +129,8 @@
 
 .header {
   width: 100%;
-  min-height: 200vh;
-  background-color: #111111;
-  opacity: 1;
-  background-image: linear-gradient(#171717 3.5px, transparent 3.5px),
-    linear-gradient(to right, #171717 3.5px, #111111 3.5px);
-  background-size: 70px 70px;
   padding-top: 150px;
-  overflow: hidden;
+  padding-bottom: 150px;
 }
 
 .header .header-box .title h1 {
@@ -143,178 +147,30 @@
   line-height: 1.8;
 }
 
-.mySlides {
-  display: none;
-}
-
-
-/* .header .header-box .hero-img {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding-top: 100px;
-}
-
-.header .header-box .hero-img img {
+.carousel {
   width: 100%;
-  height: 220px;
+  margin-top: 30px;
+  margin-left: 100px;
 }
 
-.header .header-box .hero-img img:nth-child(2) {
-  scale: 1.2;
-} */
-
-.header .header-box .about {
-  padding-top: 150px;
-  padding-bottom: 50px;
-}
-
-.header .header-box .about h1 {
-  color: var(--text-color);
-  font-weight: 800;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.header .header-box .about p {
-  color: var(--text-color-opacity);
-  width: 80%;
-  text-align: center;
-  margin-inline: auto;
-  line-height: 1.5;
-}
-
-.header .header-box .about .info {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding-top: 50px;
-  row-gap: 50px;
-}
-
-.header .header-box .about .info .box {
-  text-align: center;
-}
-
-.header .header-box .about .info .box h3 {
-  color: var(--text-color);
-  margin-bottom: 20px;
-}
-
-.header .header-box .about .info .box button {
-  width: 100px;
-  height: 30px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  background-color: transparent;
-  border: 1px solid var(--text-color-opacity);
-  color: var(--text-color);
-  cursor: pointer;
-}
-
-.header .header-box .about .info .box h1 {
-  font-size: 50px;
-  color: var(--secondary-color);
-}
-
-.header .header-box .about .info .box button:hover {
-  background-color: var(--button-hover);
-  border: none;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-}
-
-.trainers {
-  padding-top: 50px;
-  background-color: var(--primary-color);
-}
-
-.trainers svg {
-  background-color: var(--primary-color-two);
-}
-
-.trainers #title-trainer {
-  color: var(--text-color);
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.trainers .container {
-  width: 80%;
-  margin-inline: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  gap: 20px;
-}
-
-.trainer-box {
+.carousel .carousel-container {
+  position: relative;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  padding: 30px 30px;
-  color: var(--text-color);
+  height: 400px;
+  width: 500px;
   border-radius: 8px;
-  text-align: center;
 }
 
-.trainers .trainer-box .img-container {
+.carousel-btn-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  border-color: white;
-  border: 2px solid var(--text-color-opacity);
-}
-
-.trainer-box i {
-  font-size: 30px;
-  color: var(--text-color-opacity);
-}
-
-.trainer-box h1 {
-  letter-spacing: 1px;
-  margin-top: 15px;
-  font-size: 20px;
-  font-weight: 800;
-}
-
-.trainer-box h2 {
-  letter-spacing: 2px;
-  font-size: 15px;
-  font-weight: 200;
-  color: var(--text-color-opacity);
-  margin-bottom: 20px;
-}
-
-.trainer-box p {
-  font-size: 14px;
-  color: var(--text-color);
-}
-
-.trainer-box .social {
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  position: absolute;
+  bottom: 15px;
+  left: 215px;
   gap: 10px;
 }
 
-.trainer-box .social i {
-  font-size: 15px;
-  transition: all 0.3s ease;
-}
 
-.trainer-box .social i:hover {
-  color: var(--secondary-color);
-  transform: scale(1.2);
-}
 
 @media screen and (max-width: 768px) {
   .navbar .navbar-box .hamburger {
@@ -386,21 +242,6 @@
   .header .header-box .title p {
     font-size: 12px;
   }
-
-  .header .header-box .hero-img {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  .header .header-box .hero-img img:nth-child(2) {
-    scale: 1;
-  }
-  .header .header-box .about p {
-    width: 100%;
-    font-size: 14px;
-  }
 }
 
 @media screen and (max-width: 575px) {
@@ -414,37 +255,13 @@
 }
 
 @media screen and (max-width: 475px) {
-  .header .header-box .hero-img {
-    padding-top: 50px;
-  }
-
   .header .header-box .title h1 {
     font-size: 20px;
     line-height: 1.5;
   }
-
-  .header .header-box .hero-img img {
-    height: 160px;
-  }
-
-  .header .header-box .about h1 {
-    font-size: 28px;
-  }
-
-  .header .header-box .about p {
-    font-size: 12px;
-  }
-
-  .header .header-box .about .info {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-
-  .header .header-box .about .box h1 {
-    font-size: 34px;
-  }
 }
 
-/*!
+/* 
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
  * @author Jonathan Suh @jonsuh
