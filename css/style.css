@@ -160,6 +160,39 @@ main {
   align-items: center;
 }
 
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.user-info img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.user-info div {
+  margin-left: 16px;
+}
+
+main .description .user-info h1 {
+  color: var(--text-color);
+  margin: 0;
+  font-size: medium;
+  font-weight: bold;
+}
+
+main .description .user-info p {
+  font-size: small;
+  margin-top: 0;
+}
+
 .carousel {
   width: 100%;
 }
@@ -180,19 +213,19 @@ main {
   gap: 10px;
 }
 
-main h3 {
+main .description p {
   font-size: medium;
   color: var(--text-color-opacity);
   margin-top: 20px;
 }
 
 .form-contact {
-  margin-left: 20px;
+  margin-left: 40px;
   padding-top: 16px;
   display: flex;
   flex-direction: column;
   width: 400px;
-  background-color: #cacaca7c;
+  border: 1px solid var(--primary-color-two);
   align-items: center;
   border-radius: 8px;
 }
@@ -232,11 +265,20 @@ main h3 {
 }
 
 .form-contact form button {
-  background-color: #57e5a7;
   border: none;
-  color: #000;
+  color: var(--primary-color);
   font-weight: bold;
-  font-size: larger
+  font-size: larger;
+  transition: all ease-in 0.3s;
+  -webkit-transition: all ease-in 0.3s;
+  -moz-transition: all ease-in 0.3s;
+  -ms-transition: all ease-in 0.3s;
+  -o-transition: all ease-in 0.3s;
+}
+
+.form-contact form button:hover {
+  background-color: var(--button-hover);
+  color: var(--text-color);
 }
 
 @media screen and (max-width: 768px) {
