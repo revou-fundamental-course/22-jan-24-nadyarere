@@ -13,19 +13,14 @@
       rel="stylesheet"
     />
 
-    <!-- Font awesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- Font awesome kit -->
+    <script src="https://kit.fontawesome.com/7d2c1a274e.js" crossorigin="anonymous"></script>
 
     <!-- w3 css -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
     <link rel="stylesheet" href="./css/style.css" />
+
   </head>
   <body>
     <!-- todo Navbar -->
@@ -85,23 +80,26 @@
         <div class="slider"></div>
       </div>
 
-      <div class="form-contact">
-        <div class="container">
-          <h1>Contact Us</h1>
-          <p>
-            Sales akan menghubungi anda 1x24 <br />jam setelah data kami terima
-          </p>
-          <form action="">
-            <label for="">Your Name: </label>
-            <input type="text" placeholder="First and last name" />
-            <label for="">Email Address: </label>
-            <input type="email" placeholder="example@mail.com" />
-            <label for="">What Are You Interested in? </label>
-            <select name="" id="">
-              <option value="">Select Option</option>
-            </select>
-            <button type="submit">SEND</button>
-          </form>
+      <div class="flex-end">
+        <div class="form-contact">
+          <div class="container">
+            <h1>Contact Us</h1>
+            <p>
+              Sales akan menghubungi anda 1x24 <br />jam setelah data kami
+              terima
+            </p>
+            <form action="">
+              <label for="">Your Name: </label>
+              <input type="text" placeholder="First and last name" />
+              <label for="">Email Address: </label>
+              <input type="email" placeholder="example@mail.com" />
+              <label for="">What Are You Interested in? </label>
+              <select name="" id="">
+                <option value="">Select Option</option>
+              </select>
+              <button type="submit">SEND</button>
+            </form>
+          </div>
         </div>
       </div>
 
@@ -121,13 +119,75 @@
               Your first feature, written in the form of a benefit statement.
             </p>
           </div>
+          <div class="feature">
+            <div class="circle">
+              <p>2</p>
+            </div>
+            <p>
+              Your second feature, written in the form of a benefit statement.
+            </p>
+          </div>
+          <div class="feature">
+            <div class="circle">
+              <p>3</p>
+            </div>
+            <p>
+              Your third feature, written in the form of a benefit statement.
+            </p>
+          </div>
         </div>
       </div>
     </main>
     <!-- todo Main -->
 
     <!-- todo Footer -->
-    <footer></footer>
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>Groceries<span>Logo</span></h3>
+
+        <p class="footer-links">
+          <a href="#" class="link-1">Home</a>
+
+          <a href="#">Our Package</a>
+
+          <a href="#">Call Us</a>
+        </p>
+
+        <p class="footer-company-name">Company Name © 2015</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1.555.555.5555</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">support@company.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
+          euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
     <!-- todo Footer -->
 
     <script src="./js/script.js"></script>
