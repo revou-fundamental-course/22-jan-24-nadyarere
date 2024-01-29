@@ -141,23 +141,33 @@ body {
 
 .header .header-box .title p {
   color: var(--text-color-opacity);
+  font-size: 20px;
   text-align: center;
   padding-top: 20px;
   line-height: 1.8;
 }
 
 main {
-  display: flex;
   padding-top: 30px;
   padding-bottom: 150px;
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
   justify-content: center;
-  width: 100%;
+  gap: 100px;
 }
 
 .description {
   display: flex;
+  width: fit-content;
   flex-direction: column;
+  position: relative;
   align-items: center;
+  border: 1px dotted var(--primary-color-two);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 .user-info {
@@ -196,21 +206,13 @@ main .description .user-info p {
 .carousel {
   width: 100%;
 }
+
 .carousel .carousel-container {
-  position: relative;
   overflow: hidden;
   display: flex;
   height: 400px;
   width: 500px;
   border-radius: 8px;
-}
-
-.carousel-btn-container {
-  display: flex;
-  position: absolute;
-  bottom: 15px;
-  left: 215px;
-  gap: 10px;
 }
 
 main .description p {
@@ -219,8 +221,16 @@ main .description p {
   margin-top: 20px;
 }
 
+.slider {
+  margin-top: 20px;
+  width: calc(100% / 3);
+  background-color: var(--text-color-opacity);
+  height: 2px;
+  bottom: 5px;
+}
+
 .form-contact {
-  margin-left: 40px;
+  /* margin-left: 100px; */
   padding-top: 16px;
   display: flex;
   flex-direction: column;
@@ -250,13 +260,15 @@ main .description p {
   color: var(--text-color);
 }
 
-.form-contact label{
+.form-contact label {
   font-size: medium;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.form-contact input, .form-contact select, .form-contact form button {
+.form-contact input,
+.form-contact select,
+.form-contact form button {
   margin-bottom: 30px;
   width: 100%;
   border-radius: 8px;
@@ -279,6 +291,29 @@ main .description p {
 .form-contact form button:hover {
   background-color: var(--button-hover);
   color: var(--text-color);
+}
+
+.offer p {
+  color: var(--text-color);
+  text-align: justify;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.feature .circle {
+  display: flex;
+  background-color: rgba(155, 155, 155, 0.39);
+  color: var(--text-color);
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 @media screen and (max-width: 768px) {
