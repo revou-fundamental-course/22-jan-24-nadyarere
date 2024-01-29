@@ -397,10 +397,12 @@ main svg {
   color: var(--text-color);
   margin-top: 0;
   margin-bottom: 15px;
+  text-align: left;
 }
 
 .product p {
   color: var(--text-color-opacity);
+  text-align: left;
 }
 
 .container-services {
