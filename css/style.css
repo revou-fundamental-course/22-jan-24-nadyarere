@@ -82,7 +82,7 @@ body {
 .navbar .navbar-box .menu li a {
   text-decoration: none;
   color: var(--text-color-opacity);
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .navbar .navbar-box .menu li a:hover,
@@ -162,7 +162,7 @@ main {
   flex-direction: column;
   position: relative;
   align-items: center;
-  border: 1px dotted var(--primary-color-two);
+  border: 1px solid var(--primary-color-two);
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -213,6 +213,8 @@ main .description .user-info p {
   height: 400px;
   width: 500px;
   border-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 main .description p {
@@ -254,6 +256,7 @@ main .description p {
 
 .form-contact p {
   color: var(--text-color-opacity);
+  text-align: justify;
 }
 
 .form-contact form {
@@ -309,7 +312,7 @@ main .description p {
   margin-top: 30px;
 }
 
-.feature .circle {
+.circle {
   display: flex;
   background-color: rgba(155, 155, 155, 0.39);
   color: var(--text-color-opacity);
@@ -512,7 +515,7 @@ main .description p {
     margin-inline: auto;
   }
 
-  .slider{
+  .slider {
     margin-bottom: 10px;
   }
 }

@@ -25,7 +25,10 @@ function setInnerHtmlBasedOnWidth() {
     <p>"Setiap Hari Belanja Disini, Harga Murah-Murah"</p>
 
     <div class="user-info">
-      <img src="./assets/user.jpg" alt="" />
+      <!-- <img src="./assets/user.jpg" alt="" /> -->
+      <div class="circle">
+        <p><i class="fa fa-user"></i></p>
+      </div>
       <div>
         <h1>Florence Hughes</h1>
         <p>Ibu Rumah Tangga, 28th</p>
@@ -75,7 +78,7 @@ function setInnerHtmlBasedOnWidth() {
       <div class="container">
         <h1>Contact Us</h1>
         <p>
-          Sales akan menghubungi anda 1x24 <br />jam setelah data kami
+          Sales akan menghubungi anda 1x24 jam setelah data kami
           terima
         </p>
         <form action="">
@@ -91,7 +94,9 @@ function setInnerHtmlBasedOnWidth() {
         </form>
       </div>
     </div>
-  </div>`;
+  </div>
+
+  `;
   } else {
     main.innerHTML = `<div class="description">
     <div class="carousel">
@@ -105,7 +110,10 @@ function setInnerHtmlBasedOnWidth() {
     <p>"Setiap Hari Belanja Disini, Harga Murah-Murah"</p>
 
     <div class="user-info">
-      <img src="./assets/user.jpg" alt="" />
+      <!-- <img src="./assets/user.jpg" alt="" /> -->
+      <div class="circle">
+        <p><i class="fa fa-user"></i></p>
+      </div>
       <div>
         <h1>Florence Hughes</h1>
         <p>Ibu Rumah Tangga, 28th</p>
@@ -120,7 +128,7 @@ function setInnerHtmlBasedOnWidth() {
       <div class="container">
         <h1>Contact Us</h1>
         <p>
-          Sales akan menghubungi anda 1x24 <br />jam setelah data kami
+          Sales akan menghubungi anda 1x24 jam setelah data kami
           terima
         </p>
         <form action="">
@@ -181,7 +189,6 @@ window.onload = setInnerHtmlBasedOnWidth;
 // You can also add an event listener to handle changes in screen width
 window.addEventListener("resize", () => {
   setInnerHtmlBasedOnWidth();
-  
 });
 
 menuBar.addEventListener("click", () => {
