@@ -14,20 +14,22 @@
     />
 
     <!-- Font awesome kit -->
-    <script src="https://kit.fontawesome.com/7d2c1a274e.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/7d2c1a274e.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- w3 css -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
     <link rel="stylesheet" href="./css/style.css" />
-
   </head>
   <body>
     <!-- todo Navbar -->
     <nav class="navbar">
       <div class="container">
         <div class="navbar-box">
-          <a href="#" class="logo">Groceries</a>
+          <a href="/" class="logo">Groceries</a>
           <div class="ham">
             <button class="hamburger hamburger--elastic" type="button">
               <span class="hamburger-box">
@@ -35,9 +37,9 @@
               </span>
             </button>
             <ul class="menu">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Our Package</a></li>
-              <li><a href="#">Call Us</a></li>
+              <li><a href="#header">Home</a></li>
+              <li><a href="#main">Our Package</a></li>
+              <li><a href="#footer">Call Us</a></li>
             </ul>
           </div>
         </div>
@@ -46,7 +48,7 @@
     <!-- todo Navbar -->
 
     <!-- todo header -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="header-box">
         <div class="title">
           <h1>Top Rated E-Groceries Shop in<br />Indonesian</h1>
@@ -57,7 +59,7 @@
     <!-- todo Header -->
 
     <!-- todo Main -->
-    <main>
+    <main id="main">
       <div class="description">
         <div class="carousel">
           <div class="carousel-container">
@@ -141,50 +143,52 @@
     <!-- todo Main -->
 
     <!-- todo Footer -->
-    <footer class="footer-distributed">
-      <div class="footer-left">
-        <h3>Groceries<span>Logo</span></h3>
+    <footer class="footer-distributed" id="footer">
+      <div class="container">
+        <div class="footer-left">
+          <h3>Groceries<span>Logo</span></h3>
 
-        <p class="footer-links">
-          <a href="#" class="link-1">Home</a>
+          <p class="footer-links">
+            <a href="#" class="link-1">Home</a>
 
-          <a href="#">Our Package</a>
+            <a href="#">Our Package</a>
 
-          <a href="#">Call Us</a>
-        </p>
+            <a href="#">Call Us</a>
+          </p>
 
-        <p class="footer-company-name">Company Name © 2015</p>
-      </div>
-
-      <div class="footer-center">
-        <div>
-          <i class="fa fa-map-marker"></i>
-          <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+          <p class="footer-company-name">Groceries © 2024</p>
         </div>
 
-        <div>
-          <i class="fa fa-phone"></i>
-          <p>+1.555.555.5555</p>
+        <div class="footer-center">
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+          </div>
+
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+1.555.555.5555</p>
+          </div>
+
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">support@company.com</a></p>
+          </div>
         </div>
 
-        <div>
-          <i class="fa fa-envelope"></i>
-          <p><a href="mailto:support@company.com">support@company.com</a></p>
-        </div>
-      </div>
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>About the company</span>
+            Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
+            euismod convallis velit, eu auctor lacus vehicula sit amet.
+          </p>
 
-      <div class="footer-right">
-        <p class="footer-company-about">
-          <span>About the company</span>
-          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
-          euismod convallis velit, eu auctor lacus vehicula sit amet.
-        </p>
-
-        <div class="footer-icons">
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-github"></i></a>
+          <div class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+          </div>
         </div>
       </div>
     </footer>

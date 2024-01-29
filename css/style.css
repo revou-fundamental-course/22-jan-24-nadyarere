@@ -22,7 +22,7 @@ body {
     linear-gradient(to right, #171717 3.5px, #111111 3.5px);
   background-size: 70px 70px;
   min-height: 100vh;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .navbar {
@@ -148,8 +148,8 @@ body {
 }
 
 main {
-  padding-top: 30px;
-  padding-bottom: 150px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   display: grid;
   grid-template-columns: repeat(2, 500px);
   row-gap: 100px;
@@ -222,7 +222,7 @@ main .description p {
 }
 
 .slider {
-  margin-top: 20px;
+  margin-top: 30px;
   width: calc(100% / 3);
   background-color: var(--text-color-opacity);
   height: 2px;
@@ -240,7 +240,7 @@ main .description p {
   border-radius: 8px;
 }
 
-.flex-end{
+.flex-end {
   display: flex;
   justify-content: flex-end;
 }
@@ -392,7 +392,7 @@ main .description p {
 }
 
 .footer-distributed .footer-company-name {
-  color: #222;
+  color: var(--text-color-opacity);
   font-size: 14px;
   font-weight: normal;
   margin: 0;
@@ -500,6 +500,22 @@ main .description p {
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1075px) {
+  main {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-inline: auto;
+  }
+
+  .slider{
+    margin-bottom: 10px;
+  }
+}
 
 @media (max-width: 880px) {
   .footer-distributed {
