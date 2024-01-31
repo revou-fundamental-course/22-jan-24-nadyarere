@@ -758,13 +758,23 @@ main button:hover {
 }
 
 @media screen and (max-width: 475px) {
+  .navbar .navbar-box .logo {
+    font-size: 20px;
+  }
+
   .header .header-box .title h1 {
     font-size: 20px;
     line-height: 1.5;
   }
 
   .form-contact {
-    border: none;
+    width: 80%;
+    margin-inline: auto;
+  }
+
+  main button {
+    width: 80%;
+    margin-inline: auto;
   }
 }
 
