@@ -393,6 +393,10 @@ main svg {
   padding-bottom: 30px;
 }
 
+.container-product::-webkit-scrollbar {
+  display: none;
+}
+
 .product {
   display: flex;
   flex: 0 0 auto;
