@@ -375,7 +375,6 @@ body {
 
 main {
   padding-top: 50px;
-  background-color: var(--primary-color);
   text-align: center;
 }
 
@@ -385,7 +384,7 @@ main svg {
 }
 
 .container-product {
-  margin-top: 100px;
+  padding-top: 100px;
   width: 80%;
   margin-inline: auto;
   display: flex;
@@ -462,6 +461,12 @@ main button:hover {
 .auction {
   margin-top: 150px;
   margin-bottom: 150px;
+}
+
+.auction p {
+  color: var(--text-color-opacity);
+  font-size: 18px;
+  padding: 40px 0;
 }
 
 /* footer */
