@@ -20,3 +20,4 @@ Creating a website based on mockup given by revou.
 - form contact us with validation
 - slider for banner and product section
 - responsive navbar with hamburger animation
+- navigation to section
