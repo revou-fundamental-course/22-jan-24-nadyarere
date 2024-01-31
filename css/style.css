@@ -82,7 +82,7 @@ body {
 .navbar .navbar-box .menu li a {
   text-decoration: none;
   color: var(--text-color-opacity);
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .navbar .navbar-box .menu li a:hover,
@@ -157,17 +157,9 @@ body {
 }
 
 .description {
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  overflow-x: scroll;
-  align-items: center;
-  border: 1px solid var(--primary-color-two);
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
 }
 
 .user-info {
@@ -201,24 +193,52 @@ body {
 }
 
 .carousel {
-  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 1) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .carousel-item {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.carousel-item, .img) {
   display: flex;
-  transition: transform 0.3s ease;
-  -webkit-transition: transform 0.3s ease;
-  -moz-transition: transform 0.3s ease;
-  -ms-transition: transform 0.3s ease;
-  -o-transition: transform 0.3s ease;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel .carousel-item {
-  text-align: center;
-  width: 100%;
+  scroll-snap-align: start;
+  list-style: none;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
 }
 
 .carousel .carousel-item img {
   height: 350px;
-  width: 497.5px;
+  width: 100%;
   object-fit: cover;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
 }
 
 .carousel .carousel-container {
@@ -385,7 +405,6 @@ main svg {
   -o-transition: all 0.3s ease;
 }
 
-
 .product:hover {
   background-color: var(--button-hover);
   border-radius: 8px;
@@ -421,7 +440,7 @@ main button {
   padding: 15px 10px;
   background-color: transparent;
   color: var(--text-color);
-  border: 1px solid ;
+  border: 1px solid;
   font-weight: bold;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
